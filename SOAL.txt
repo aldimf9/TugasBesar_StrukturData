@@ -1,0 +1,12 @@
+Rancanglah multi-linked list yang memodelkan pengacara, klien, dan hubungan di antara mereka. Seorang pengacara dapat melayani banyak klien, dan satu klien hanya dapat dilayani oleh satu pengacara. Program anda harus mengimplementasikan daftar dan semua fitur yang tercantum di bawah ini.
+1.	Insert data pengacara dari belakang (5)
+2.	Show all data pengacara (5)
+3.	Menghapus data pengacara dan kliennya (5)
+4.	Mencari data pengacara (5)
+5.	Insert data klien (10)
+6.	Menghubungkan data klien ke data pengacara (10)
+7.	Menampilkan seluruh data pengacara beserta kliennya (15)
+8.	Mencari data klien pada pengacara tertentu (10)
+9.	Menghapus data klien pada pengacara tertentu (15)
+10.	Menampilkan pengacara yang melayani klien paling banyak (10)
+11.	Main program (10)
