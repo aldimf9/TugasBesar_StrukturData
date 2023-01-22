@@ -39,6 +39,7 @@ struct listPengacara{
 };
 void createListPengacara(listPengacara &LP);
 adrPengacara createElementPengacara(infoPengacara data);
+void showDataPengacara(listPengacara pengacara,string namaPengacara);
 void insertPengacara(listPengacara &LP,adrPengacara pengacara);
 void showPengacara(listPengacara LP);
 adrPengacara searchPengacara(listPengacara LP,string nama);
@@ -49,6 +50,7 @@ void insertClient(listClient &LC, adrClient client);
 void kuasaHukumClient(listClient &LC,listPengacara LP,string pengacara,string client);
 void showAllKuasaHukumClient(listClient LC,listPengacara LP);
 adrClient searchClient(listPengacara LP,listClient LC,string namaPengacara,string namaClient);
+void showDataKlien(listPengacara pengacara,listClient client,string namaPengacara);
 void hapusKuasaHukumClient(listClient &LC,listPengacara LP,string namaPengacara,string namaClient);
 void searchClientTerbanyak(listPengacara LP,listClient LC);
 int menu();

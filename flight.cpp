@@ -227,13 +227,36 @@ void searchClientTerbanyak(listPengacara LP,listClient LC){
             }
             pengacara = next(pengacara);
         }
-        cout << "Nama Firma     : " << info(pengacara).namaFirma << endl;
-        cout << "Nama Pengacara : " << info(pengacara).namaPengacara << endl;
-        cout << "NIK Pengacara  : " << info(pengacara).nikPengacara << endl;
-        cout << "Usia Pengacara : " << info(pengacara).usia << endl;
+        cout << "Nama Firma     : " << info(terbanyak).namaFirma << endl;
+        cout << "Nama Pengacara : " << info(terbanyak).namaPengacara << endl;
+        cout << "NIK Pengacara  : " << info(terbanyak).nikPengacara << endl;
+        cout << "Usia Pengacara : " << info(terbanyak).usia << endl;
         cout << endl;
     }else{
         cout << " List Kosong !!! \n"<< endl;
+    }
+}
+void showDataPengacara(listPengacara pengacara,string namaPengacara){
+    adrPengacara P = searchPengacara(pengacara,namaPengacara);
+    cout << "Nama Firma     : " << info(P).namaFirma << endl;
+    cout << "Nama Pengacara : " << info(P).namaPengacara << endl;
+    cout << "NIK Pengacara  : " << info(P).nikPengacara << endl;
+    cout << "Usia Pengacara : " << info(P).usia << endl;
+    cout << endl;
+}
+void showDataKlien(listPengacara pengacara,listClient client,string namaPengacara){
+    adrPengacara P = searchPengacara(pengacara,namaPengacara);
+    adrClient C = first(client);
+    cout<< endl;
+    while (C != nil){
+        if (adrParent(C) == P){
+            cout << " Nama Client   : " << info(C).namaClient << endl;
+            cout << " NIK Client    : " << info(C).nikClient << endl;
+            cout << " Masalah Client: " << info(C).masalah << endl;
+            cout << " Usia Client   : " << info(C).usia << endl;
+            cout << endl;
+        }
+        C = next(C);
     }
 }
 int menu(){

@@ -50,8 +50,7 @@ int main()
             cout << "======================================================" << endl;
             cout << " Nama Pengacara yang Ingin di Cari: ";
             cin >> namaPengacara;
-            pengacara = searchPengacara(LP,namaPengacara);
-            cout << " Alamatnya ialah: " << pengacara << endl;
+            showDataPengacara(LP,namaPengacara);
             cout << "======================================================" << endl;
             break;
         case 5:
@@ -89,10 +88,7 @@ int main()
             cout << "======================================================" << endl;
             cout << " Nama Pengacara: ";
             cin >> namaPengacara;
-            cout << " Nama Client: ";
-            cin >> namaClient;
-            client = searchClient(LP,LC,namaPengacara,namaClient);
-            cout << " Alamatnya ialah: " << client << endl;
+            showDataKlien(LP,LC,namaPengacara);
             cout << "======================================================" << endl;
             break;
         case 9:
